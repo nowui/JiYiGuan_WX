@@ -7,7 +7,7 @@
         <icon class="checkbox" type="{{product.is_check ? 'success' : 'circle'}}" color="{{product.is_check ? '#c81623' : '#dddddd'}}" />
       </view>
       <view class="weui-media-box__hd weui-media-box__hd_in-appmsg cart-list-image">
-        <image class="weui-media-box__thumb image" src="{{product.product_image}}" />
+        <image class="weui-media-box__thumb image" src="{{product.product_image_file}}" />
       </view>
       <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
         <view class="weui-media-box__title">{{product.product_name}}</view>

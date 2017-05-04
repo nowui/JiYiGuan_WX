@@ -334,11 +334,11 @@
 
 var html2wxwebview = function (html) {
     var htmlNode = global.html2json(html);
-    console.log("htmlNode:",htmlNode);
+    // console.log("htmlNode:",htmlNode);
     htmlNode = parseHtmlNode(htmlNode);
-    console.log("parseHtmlNode:",htmlNode);
+    // console.log("parseHtmlNode:",htmlNode);
     htmlNode = arrangeNode(htmlNode);
-    console.log("arrangeNode:",htmlNode);
+    // console.log("arrangeNode:",htmlNode);
     return htmlNode;
 }
 //整理节点
@@ -464,4 +464,3 @@ var parseHtmlNode = function (htmlNode) {
 module.exports = {
     html2json:html2wxwebview
 }
-

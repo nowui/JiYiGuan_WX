@@ -12,7 +12,7 @@
   <view class="weui-panel weui-panel_access">
     <view url="" class="weui-media-box weui-media-box_appmsg" wx:for="{{product_list}}" wx:for-item="product" wx:key="{{product.product_id}}">
       <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
-        <image class="weui-media-box__thumb image" src="{{product.product_image}}" />
+        <image class="weui-media-box__thumb image" src="{{product.product_image_file}}" />
       </view>
       <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
         <view class="weui-media-box__title">{{product.product_name}}</view>

@@ -21,8 +21,8 @@ Page(Object.assign({}, Quantity, {
         product_id: '',
         product_name: '',
         product_price: 0.00,
-        product_image: [],
-        product_image_list: [],
+        product_image_file: '',
+        product_image_file_list: [],
         product_content: [],
         cart_count: []
     },
@@ -37,9 +37,9 @@ Page(Object.assign({}, Quantity, {
                 // product_id: '9f813c2d34f746f09b75661bb5278616'
             },
             success: function (data) {
-                let product_image_list = JSON.parse(data.product_image_list_original);
-                for (let i = 0; i < product_image_list.length; i++) {
-                    product_image_list[i] = constant.host + product_image_list[i];
+                let product_image_file_list = data.product_image_file_list;
+                for (let i = 0; i < product_image_file_list.length; i++) {
+                    product_image_file_list[i] = constant.host + product_image_file_list[i];
                 }
 
                 this.setData({
@@ -47,8 +47,8 @@ Page(Object.assign({}, Quantity, {
                     product_id: data.product_id,
                     product_name: data.product_name,
                     product_price: JSON.parse(data.sku_list[0].product_price)[0].product_price.toFixed(2),
-                    product_image: JSON.parse(data.product_image),
-                    product_image_list: product_image_list,
+                    product_image_file: data.product_image_file,
+                    product_image_file_list: product_image_file_list,
                     product_content: htmlToWxml.html2json(data.product_content)
                 });
             }.bind(this)
@@ -124,7 +124,7 @@ Page(Object.assign({}, Quantity, {
             sku_id: this.data.sku_id,
             product_id: this.data.product_id,
             product_name: this.data.product_name,
-            product_image: constant.host + this.data.product_image[0],
+            product_image_file: constant.host + this.data.product_image_file,
             product_price: this.data.product_price,
             product_quantity: this.data.product_quantity,
             product_stock: this.data.product_quantity.max
@@ -151,7 +151,7 @@ Page(Object.assign({}, Quantity, {
             sku_id: this.data.sku_id,
             product_id: this.data.product_id,
             product_name: this.data.product_name,
-            product_image: constant.host + this.data.product_image[0],
+            product_image_file: constant.host + this.data.product_image_file,
             product_price: this.data.product_price,
             product_quantity: {
                 quantity: this.data.product_quantity.quantity,

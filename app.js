@@ -13,7 +13,10 @@ App({
       success: function (res) {
         if (res.code) {
           wx.request({
-            url: constant.host + '/wechat/api/openid?js_code=' + res.code,
+            url: 'https://api.nowui.com/wechat/api/openid?js_code=' + res.code,
+            header: {
+              'Project': 'jiyiguan'
+            },
             data: {
 
             },

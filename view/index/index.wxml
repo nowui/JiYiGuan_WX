@@ -16,7 +16,7 @@
     </navigator>
   </view>
     <navigator url="/view/product/index?product_id={{product.product_id}}" class="category-right-item" style="width: {{(window_width - 23) / 2}}px; margin: 7px 0 0 7px;" wx:for="{{product_list}}" wx:for-item="product" wx:key="{{product.product_id}}">
-      <image style="width: {{(window_width - 22) / 2}}px; height: {{(window_width - 22) / 2}}px;" src="{{product.product_image_original}}" />
+      <image style="width: {{(window_width - 22) / 2}}px; height: {{(window_width - 22) / 2}}px;" src="{{product.product_image_file}}" />
       <view class="category-right-item-name">{{product.product_name}}</view>
       <view class="category-right-item-price">￥{{product.product_price}}</view>
     </navigator>

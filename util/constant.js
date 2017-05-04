@@ -1,6 +1,6 @@
 const constant = {
     // host: 'http://172.31.16.209:8080',
-    host: 'https://api.jiyiguan.nowui.com',
+    host: 'http://api.jiyiguan.nowui.com',
     platform: 'WX',
     version: '1.0.0',
     color: '#c81623',

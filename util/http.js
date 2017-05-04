@@ -15,14 +15,15 @@ function request(config) {
     });
 
     wx.request({
-        url: constant.host + config.url,
+        url: 'https://api.nowui.com' + config.url,
         method: 'POST',
         header: {
             'Accept': 'application/json',
             'Content-Type': 'application/json',
             'Token': storage.getToken(),
             'Platform': 'WX',
-            'Version': '1.0.0'
+            'Version': '1.0.0',
+            'Project': 'jiyiguan'
         },
         data: config.data,
         success: function (response) {

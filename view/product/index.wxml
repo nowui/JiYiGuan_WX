@@ -3,7 +3,7 @@
   <view class="header"></view>
   <view class="page-section page-section-spacing swiper">
     <swiper indicator-dots="true" indicator-active-color="#c81623" autoplay="false" interval="5000" duration="500" style="height: {{window_width}}px;">
-      <swiper-item wx:for="{{product_image_list}}" wx:for-item="image" wx:key="{{index}}">
+      <swiper-item wx:for="{{product_image_file_list}}" wx:for-item="image" wx:key="{{index}}">
         <image style="width: 100%; height: {{window_width}}px; background-color: #ffffff;" src="{{image}}" />
       </swiper-item>
     </swiper>
