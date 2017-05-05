@@ -143,3 +143,30 @@
   height: 23px;
   line-height: 23px;
 }
+
+.no-data {
+  height: 120px;
+}
+
+.no-data-image-icon {
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  left: 50%;
+  margin-left: -30px;
+  width: 60px;
+  height: 60px;
+}
+
+.no-data-text {
+  position: absolute;
+  top: 50%;
+  margin-top: 25px;
+  left: 50%;
+  margin-left: -50px;
+  width: 100px;
+  height: 30px;
+  color: #888888;
+  font-size: 14px;
+  text-align: center;
+}

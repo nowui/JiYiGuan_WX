@@ -18,6 +18,10 @@
       <view class="weui-cell__ft">￥{{product.product_total_price}}</view>
     </view>
   </view>
+  <view class="no-data" wx:if="{{cart_list.length == 0}}">
+    <image src="/image/empty.svg" class="no-data-image-icon"></image>
+    <view class="no-data-text">当前没有数据</view>
+  </view>
   <view style="height: 50px;"></view>
   <view class="footer" wx:if="{{cart_list.length > 0}}">
     <view class="footer-total">

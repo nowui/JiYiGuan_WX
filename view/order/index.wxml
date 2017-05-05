@@ -3,7 +3,7 @@
   <view class="weui-tab">
     <view class="weui-navbar">
       <block wx:for="{{order_status_list}}" wx:for-item="order_status" wx:key="{{order_status.order_status_value}}">
-        <view id="{{order_status.order_status_value}}" class="weui-navbar__item {{tab_index == index ? 'weui-bar__item_on' : ''}}" bindtap="handleTab">
+        <view id="{{order_status.order_status_value}}" class="weui-navbar__item {{order_flow == order_status.order_status_value ? 'weui-bar__item_on' : ''}}" bindtap="handleTab">
           <view class="weui-navbar__title">{{order_status.order_status_name}}</view>
         </view>
       </block>
@@ -21,4 +21,8 @@
       </view>
     </view>
   </view>
+      <view class="no-data" wx:if="{{order_list.length == 0}}">
+        <image src="/image/empty.svg" class="no-data-image-icon"></image>
+        <view class="no-data-text">当前没有数据</view>
+      </view>
 </view>

@@ -1,4 +1,7 @@
 <view class="container">
   <view class="header"></view>
-  
+  <view class="no-data">
+    <image src="/image/empty.svg" class="no-data-image-icon"></image>
+    <view class="no-data-text">当前没有数据</view>
+  </view>
 </view>

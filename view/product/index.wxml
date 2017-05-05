@@ -52,7 +52,7 @@
     </view>
     <view class="footer-favor" bindtap="handleFavor">
       <view class="footer-icon">
-        <image class="footer-icon-image" src="/image/favor.png" />
+        <image class="footer-icon-image" src="/image/favor.svg" />
       </view>
       收藏
     </view>

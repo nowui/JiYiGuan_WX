@@ -12,6 +12,10 @@
       <view class="weui-cell__ft weui-cell__ft_in-access"></view>
     </view>
   </view>
+  <view class="no-data" wx:if="{{delivery_list.length == 0}}">
+    <image src="/image/empty.svg" class="no-data-image-icon"></image>
+    <view class="no-data-text">当前没有数据</view>
+  </view>
   <view class="footer">
     <navigator url="/view/delivery/detail" class="footer-add">
       新增收货地址
