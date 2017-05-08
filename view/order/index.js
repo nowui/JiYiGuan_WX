@@ -8,6 +8,7 @@ Page({
         slider_offset: 0,
         slider_left: 0,
         slider_width: 0,
+        is_load: false,
         list: [],
         order_flow: '',
         order_list: []
@@ -46,6 +47,7 @@ Page({
                     slider_left: 0,
                     slider_offset: slider_width * index,
                     slider_width: slider_width,
+                    is_load: true,
                     list: data,
                     order_flow: option.order_flow,
                     order_list: order_list

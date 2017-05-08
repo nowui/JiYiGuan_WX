@@ -5,6 +5,7 @@ const http = require("../../util/http.js");
 Page({
     data: {
         color: constant.color,
+        is_load: false,
         is_select: false,
         delivery_list: []
     },
@@ -55,6 +56,7 @@ Page({
             },
             success: function (data) {
                 this.setData({
+                    is_load: true,
                     delivery_list: data
                 });
             }.bind(this)

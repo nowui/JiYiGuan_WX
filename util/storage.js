@@ -5,8 +5,7 @@ const product_key = ('product_' + constant.version);
 const cart_key = ('cart_' + constant.version);
 
 function getToken() {
-    var token = wx.getStorageSync(token_key);
-    return 'eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE0OTMwMjA5NTAsImV4cCI6MTUyNDU1Njk1MCwiYXV0aG9yaXphdGlvbl9pZCI6IjE3YzdkZjI2MTUyMDQyOWY4ZWM1ODhmYmUzYTJlZmY0IiwidXNlcl9pZCI6IjRhMzgwYmNiYTRlMTRjNDViODFmOTg4MmI2M2RjMjlhIn0.XmoZ11WByhYW16ighnlDjIc580tviJzna5oYdayca6xKaaG92Pw7F0_sa2LyxuI7X9__x3gIbZKE0p4sTRa90g';
+    return wx.getStorageSync(token_key);
 }
 
 function setToken(token) {

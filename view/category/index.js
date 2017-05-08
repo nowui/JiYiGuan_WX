@@ -31,7 +31,8 @@ Page({
             },
             success: function (data) {
                 for (var i = 0; i < data.length; i++) {
-                    data[i].product_image_original = constant.host + JSON.parse(data[i].product_image_original)[0];
+                    data[i].product_image_file = constant.host + data[i].product_image_file;
+                    
                     data[i].product_price = data[i].product_price.toFixed(2);
                 }
 

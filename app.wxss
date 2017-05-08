@@ -145,13 +145,13 @@
 }
 
 .no-data {
-  height: 120px;
+  
 }
 
 .no-data-image-icon {
   position: absolute;
   top: 50%;
-  margin-top: -50px;
+  margin-top: -100px;
   left: 50%;
   margin-left: -30px;
   width: 60px;
@@ -161,7 +161,7 @@
 .no-data-text {
   position: absolute;
   top: 50%;
-  margin-top: 25px;
+  margin-top: -25px;
   left: 50%;
   margin-left: -50px;
   width: 100px;
